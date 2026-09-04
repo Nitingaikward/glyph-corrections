@@ -136,6 +136,8 @@ class TestSkewDetection(unittest.TestCase):
         from PIL import Image
         path = os.path.join(BASE_DIR, 'tests', 'fixtures', 'eval', '111_p001.png')
         if not os.path.exists(path):
+            path = os.path.join(BASE_DIR, 'tests', 'fixtures', 'real', '01.png')
+        if not os.path.exists(path):
             self.skipTest('eval fixtures not built (tools/build_eval_set.py)')
         return Image.open(path).convert('L')
 
