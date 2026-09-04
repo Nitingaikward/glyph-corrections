@@ -25,10 +25,10 @@ CONFUSION_PAIRS: Dict[Tuple[str, str], float] = {
     # 2. Visually Confusable Base Consonants (loop, descender, and contour similarities)
     ('ಪ', 'ವ'): 0.25,
     ('ಬ', 'ವ'): 0.30,
-    ('ನ', 'ವ'): 0.25,
+    ('ನ', 'ವ'): 0.30,
     ('ಮ', 'ಯ'): 0.25,
     ('ಹ', 'ಪ'): 0.25,
-    ('ಹ', 'ಷ'): 0.25,
+    ('ಹ', 'ಷ'): 0.20,
     ('ಹ', 'ಯ'): 0.20,
     ('ಶ', 'ತ'): 0.22,
     ('ಲ', 'ಳ'): 0.25,
@@ -42,7 +42,7 @@ CONFUSION_PAIRS: Dict[Tuple[str, str], float] = {
     ('ರ', 'ದ'): 0.30,
     ('ಜ', 'ಪ'): 0.25,
     ('ತ', 'ನ'): 0.35,
-    ('ಥ', 'ಫ'): 0.25,
+    ('ಥ', 'ಫ'): 0.20,
     ('ದ', 'ಞ'): 0.35,
 
     # 2b. Added from an empirical audit (aligning real raw-Tesseract output

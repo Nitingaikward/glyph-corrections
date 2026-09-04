@@ -473,7 +473,7 @@ def collect_kannada_candidates(
             cand = w[:i] + VOWEL_MATRA_MAP[ch] + w[i+1:]
             res, fuzzy = resolve_valid_surface_form(cand, dictionary)
             if res:
-                candidates.append((res, 0.25, 'word_correction_unconstrained' if fuzzy else 'word_correction'))
+                candidates.append((res, 0.20, 'word_correction_unconstrained' if fuzzy else 'word_correction'))
 
     # 7. Stem-level substitutions for inflected words (e.g., ದೂಹಿಸಿದರು -> ದೂಷಿಸಿದರು)
     for suf in (suffixes_ending_with(w[-1]) if w else ()):

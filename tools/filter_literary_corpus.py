@@ -71,7 +71,15 @@ import argparse
 import csv
 import os
 import re
+import sys
 from collections import Counter
+
+if hasattr(sys.stdout, 'reconfigure'):
+    try:
+        sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+        sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+    except Exception:
+        pass
 
 KANNADA_RE = re.compile(r'[ಀ-೿]')
 LETTER_RE = re.compile(r'[^\W\d_]', re.UNICODE)
