@@ -47,6 +47,7 @@ Thumbs.db
 # Test outputs
 tests/output/
 test_output.pdf
+results/
 
 # N-gram training corpus & cached model -- multi-GB/hundreds-of-MB, exceeds
 # GitHub's 100MB file limit and shouldn't live in git history. Rebuild via
